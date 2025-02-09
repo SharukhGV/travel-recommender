@@ -184,3 +184,87 @@
 .contact-info p {
   margin: 0.25rem 0;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* FavoritesPage.css */
+
+.favorites-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.favorites-page h1 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.favorite-park {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.favorite-park:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-park h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.favorite-park p {
+  line-height: 1.6;
+}
+
+.favorite-park button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.favorite-park button:hover {
+  background-color: #c82333;
+}
+
+.favorite-park button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.5);
+}
